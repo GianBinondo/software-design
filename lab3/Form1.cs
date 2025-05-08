@@ -78,8 +78,9 @@ namespace lab3
         {
             Book[] library = new Book[]
             {
+                new Book { Title = " C# Programming", Author = "John Smith"},
                 new Book { Title = "Deep Rock Galactic", Author = "Karl" },
-                new Magazine { Title = "Tech Weekly", Author = "John Doe", IssueNumber = 45 },
+                new Magazine { Title = "Tech Weekly", Author = "John Doe", IssueNumber = 12 },
                 new EBook { Title = "Invincible", Author = "Robert kirkman", Format = "PDF", FileSizeMB = 3000 },
                 new Magazine { Title = "Yeah Science! ", Author = "Walter White", IssueNumber = 102 },
                 new EBook { Title = "Flint and Steel", Author = "Steve", Format = "EPUB", FileSizeMB = 8.2 },
@@ -91,6 +92,11 @@ namespace lab3
                 new Book { Title = " Toffe The Dog", Author = " Brownie"}
             };
             ProcessBooks(library); // Process them polymorphically
+        }
+
+        private void listBoxBooks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

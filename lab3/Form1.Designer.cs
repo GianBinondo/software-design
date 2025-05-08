@@ -50,6 +50,7 @@
             listBoxBooks.Name = "listBoxBooks";
             listBoxBooks.Size = new Size(561, 214);
             listBoxBooks.TabIndex = 1;
+            listBoxBooks.SelectedIndexChanged += listBoxBooks_SelectedIndexChanged;
             // 
             // Form1
             // 
