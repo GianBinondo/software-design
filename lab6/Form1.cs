@@ -72,7 +72,7 @@ namespace lab6
 
         // Task 3
 
-        // 1. Asynchronous Update Operation
+        //  Asynchronous Update Operation
         public async Task UpdateBookAsync(int bookId, string newTitle, string newAuthorName)
         {
             using (var context = new BookstoreContext())
@@ -90,7 +90,7 @@ namespace lab6
             }
         }
 
-        // 2. Asynchronous Delete Operation
+        // Asynchronous Delete Operation
         public async Task DeleteBookAsync(int bookId)
         {
             using (var context = new BookstoreContext())
@@ -104,7 +104,7 @@ namespace lab6
             }
         }
 
-        // 3. Fetch data with progress reporting
+        //  Fetch data with progress reporting
         public async Task<List<string>> GetBooksWithProgressAsync(IProgress<int> progress)
         {
             using (var context = new BookstoreContext())
@@ -133,7 +133,7 @@ namespace lab6
             }
         }
 
-        // 4. Asynchronous Search
+        //  Asynchronous Search
         public async Task<List<string>> SearchBooksAsync(string searchTerm)
         {
             using (var context = new BookstoreContext())
