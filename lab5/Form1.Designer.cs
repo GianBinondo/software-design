@@ -32,6 +32,12 @@
             txtBookTitle = new TextBox();
             btnAddBook = new Button();
             ListBoxBooks = new ListBox();
+            txtBookID = new TextBox();
+            btnUpdateBook = new Button();
+            btnSearch = new Button();
+            txtBoxSearch = new TextBox();
+            btnDelete = new Button();
+            txtBoxDelete = new TextBox();
             SuspendLayout();
             // 
             // txtAuthorName
@@ -50,7 +56,7 @@
             // 
             // btnAddBook
             // 
-            btnAddBook.Location = new Point(82, 141);
+            btnAddBook.Location = new Point(47, 117);
             btnAddBook.Name = "btnAddBook";
             btnAddBook.Size = new Size(75, 23);
             btnAddBook.TabIndex = 2;
@@ -62,22 +68,77 @@
             // 
             ListBoxBooks.FormattingEnabled = true;
             ListBoxBooks.ItemHeight = 15;
-            ListBoxBooks.Location = new Point(322, 116);
+            ListBoxBooks.Location = new Point(260, 46);
             ListBoxBooks.Name = "ListBoxBooks";
-            ListBoxBooks.Size = new Size(120, 94);
+            ListBoxBooks.Size = new Size(445, 319);
             ListBoxBooks.TabIndex = 3;
+            // 
+            // txtBookID
+            // 
+            txtBookID.Location = new Point(37, 187);
+            txtBookID.Name = "txtBookID";
+            txtBookID.Size = new Size(100, 23);
+            txtBookID.TabIndex = 4;
+            // 
+            // btnUpdateBook
+            // 
+            btnUpdateBook.Location = new Point(47, 231);
+            btnUpdateBook.Name = "btnUpdateBook";
+            btnUpdateBook.Size = new Size(75, 23);
+            btnUpdateBook.TabIndex = 5;
+            btnUpdateBook.Text = "Update";
+            btnUpdateBook.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(47, 310);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(75, 23);
+            btnSearch.TabIndex = 7;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // txtBoxSearch
+            // 
+            txtBoxSearch.Location = new Point(37, 269);
+            txtBoxSearch.Name = "txtBoxSearch";
+            txtBoxSearch.Size = new Size(100, 23);
+            txtBoxSearch.TabIndex = 6;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(47, 396);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(75, 23);
+            btnDelete.TabIndex = 9;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // txtBoxDelete
+            // 
+            txtBoxDelete.Location = new Point(37, 352);
+            txtBoxDelete.Name = "txtBoxDelete";
+            txtBoxDelete.Size = new Size(100, 23);
+            txtBoxDelete.TabIndex = 8;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDelete);
+            Controls.Add(txtBoxDelete);
+            Controls.Add(btnSearch);
+            Controls.Add(txtBoxSearch);
+            Controls.Add(btnUpdateBook);
+            Controls.Add(txtBookID);
             Controls.Add(ListBoxBooks);
             Controls.Add(btnAddBook);
             Controls.Add(txtBookTitle);
             Controls.Add(txtAuthorName);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -88,5 +149,11 @@
         private TextBox txtBookTitle;
         private Button btnAddBook;
         private ListBox ListBoxBooks;
+        private TextBox txtBookID;
+        private Button btnUpdateBook;
+        private Button btnSearch;
+        private TextBox txtBoxSearch;
+        private Button btnDelete;
+        private TextBox txtBoxDelete;
     }
 }

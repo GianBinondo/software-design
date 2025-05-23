@@ -12,13 +12,12 @@ namespace lab5
 {
     public class BookstoreContext : DbContext
     {
-    public DbSet<Book> Books { get; set; }
-    public DbSet<Author> Authors {get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Author> Authors { get; set; }
 
-     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Define the connection string here
-            optionsBuilder.UseSqlServer("Server=your_server_name;Database=BookstoreDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BookstoreDb;Trusted_Connection=True;");
         }
     }
 }
